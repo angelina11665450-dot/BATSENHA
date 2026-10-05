@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Batman | Gerador de Senhas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bat-signal"></div>
+
+    <main class="container">
+
+        <div class="logo">
+            🦇
+        </div>
+
+        <h1>BATSENHA</h1>
+
+        <p class="subtitulo">
+            GERADOR E VALIDADOR DE SENHAS
+        </p>
+
+
+        <!-- GERADOR -->
+
+        <section class="card">
+
+            <div class="titulo-card">
+                <span>🦇</span>
+                <h2>GERAR SENHA</h2>
+            </div>
+
+            <div class="senha-box">
+
+                <input
+                    type="text"
+                    id="senhaGerada"
+                    placeholder="Sua senha aparecerá aqui"
+                    readonly
+                >
+
+                <button id="copiar">
+                    📋 Copiar
+                </button>
+
+            </div>
+
+
+            <div class="tamanho">
+
+                <label for="tamanho">
+                    NÍVEL DE SEGURANÇA:
+                    <span id="valorTamanho">12</span>
+                </label>
+
+                <input
+                    type="range"
+                    id="tamanho"
+                    min="4"
+                    max="30"
+                    value="12"
+                >
+
+            </div>
+
+
+            <div class="opcoes">
+
+                <label>
+                    <input type="checkbox" id="maiusculas" checked>
+                    Letras maiúsculas
+                </label>
+
+                <label>
+                    <input type="checkbox" id="minusculas" checked>
+                    Letras minúsculas
+                </label>
+
+                <label>
+                    <input type="checkbox" id="numeros" checked>
+                    Números
+                </label>
+
+                <label>
+                    <input type="checkbox" id="simbolos" checked>
+                    Símbolos
+                </label>
+
+            </div>
+
+
+            <button class="btn-principal" id="gerar">
+                🦇 GERAR NOVA SENHA
+            </button>
+
+        </section>
+
+
+        <!-- VALIDADOR -->
+
+        <section class="card">
+
+            <div class="titulo-card">
+                <span>🔐</span>
+                <h2>VALIDAR SENHA</h2>
+            </div>
+
+            <input
+                type="text"
+                id="senhaValidada"
+                placeholder="Digite uma senha para analisar"
+            >
+
+
+            <div class="forca">
+                <div id="barraForca"></div>
+            </div>
+
+            <p id="textoForca">
+                Digite uma senha
+            </p>
+
+
+            <div class="requisitos">
+
+                <p id="tamanhoReq">
+                    ❌ Pelo menos 8 caracteres
+                </p>
+
+                <p id="maiusculaReq">
+                    ❌ Pelo menos uma letra maiúscula
+                </p>
+
+                <p id="minusculaReq">
+                    ❌ Pelo menos uma letra minúscula
+                </p>
+
+                <p id="numeroReq">
+                    ❌ Pelo menos um número
+                </p>
+
+                <p id="simboloReq">
+                    ❌ Pelo menos um símbolo
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            🦇 BATMAN SECURITY SYSTEM
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
